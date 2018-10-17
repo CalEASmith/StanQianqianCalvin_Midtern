@@ -1,0 +1,16 @@
+/* TODO: Add your styles here */
+h1{
+  text-align: center;
+  font-size: 60;
+}
+body{
+  margin: 65px;
+}
+.question{
+  font-size: 30;
+  font-weight: bold;
+}
+.answer{
+  border-bottom: 2px solid black;
+  font-size: 20;
+}
