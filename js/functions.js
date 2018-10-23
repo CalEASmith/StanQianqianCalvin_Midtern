@@ -21,7 +21,7 @@ window.addEventListener("load", onLoad);
 if page = 0 {
   document.style.backGroundColor =
 } else if page = 1 {
-
+  
 } else if page = 2 {
 
 } else if page = 3 {
