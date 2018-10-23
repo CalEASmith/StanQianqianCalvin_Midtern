@@ -1,4 +1,4 @@
-var pages = ["home","first","second","third","fourth","fifth","sixth","seventh","eighth","ninth","tenth","eleventh"];
+var pages = ["first","second","third","fourth","fifth","sixth","seventh","eighth","ninth","tenth","eleventh"];
 var page = 0;
 var yesses = 0;
 var nopes = 0;
@@ -17,3 +17,30 @@ function onLoad(){
   });
 }
 window.addEventListener("load", onLoad);
+
+if page = 0 {
+  document.style.backGroundColor =
+  document.question. = "Something else!!!!!";
+} else if page = 1 {
+
+} else if page = 2 {
+
+} else if page = 3 {
+
+} else if page = 4 {
+
+} else if page = 5 {
+
+} else if page = 6 {
+
+} else if page = 7 {
+
+} else if page = 8 {
+
+} else if page = 9 {
+
+} else if page = 10 {
+
+} else if page = 11 {
+
+}
