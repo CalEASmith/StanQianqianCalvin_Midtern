@@ -8,47 +8,51 @@ function onLoad(){
     page++;
     yesses++;
     console.log(yesses + " yesses", "page: " + pages[page]);
+    pageTurn();
   });
   var nope = document.getElementById("noButton")
   nope.addEventListener("click", function(){
     page++;
     nopes++;
     console.log(nopes + " nopes", "page: " + pages[page]);
+    pageTurn();
   });
 }
 window.addEventListener("load", onLoad);
 
-switch (page){
-  case 1:
-  document.getElementById("image").src = "assets/picture_2";
-  document.getElementById("question").innerHTML = "Have you dreamed about the world ending tomorrow?";
-  break;
-  case 2:
+function pageTurn(){
+  switch (page){
+    case 1:
+    document.getElementById("image").src = "assets/picture_2.jpeg";
+    document.getElementById("question").innerHTML = "Have you dreamed about the world ending tomorrow?";
+    break;
+    case 2:
 
-  break;
-  case 3:
+    break;
+    case 3:
 
-  break;
-  case 4:
+    break;
+    case 4:
+    
+    break;
+    case 5:
 
-  break;
-  case 5:
+    break;
+    case 6:
 
-  break;
-  case 6:
+    break;
+    case 7:
 
-  break;
-  case 7:
+    break;
+    case 8:
 
-  break;
-  case 8:
+    break;
+    case 9:
 
-  break;
-  case 9:
+    break;
+    case 10:
 
-  break;
-  case 10:
-
-  break;
-  case 11:
+    break;
+    case 11:
+  }
 }
