@@ -9,6 +9,7 @@ function onLoad(){
     yesses++;
     console.log(yesses + " yesses", "page: " + pages[page]);
     pageTurn();
+//listens for 'yes!' button click
   });
   var nope = document.getElementById("noButton")
   nope.addEventListener("click", function(){
@@ -16,12 +17,18 @@ function onLoad(){
     nopes++;
     console.log(nopes + " nopes", "page: " + pages[page]);
     pageTurn();
+    //listens for 'nope!' button click
   });
 }
 window.addEventListener("load", onLoad);
 
+//function matches page number to page edits
 function pageTurn(){
   switch (page){
+    case 0:
+//main page
+
+    break;
     case 1:
     document.getElementById("image").src = "assets/picture_2.jpeg";
     document.getElementById("question").innerHTML = "Have you dreamed about the world ending tomorrow?";
@@ -33,7 +40,7 @@ function pageTurn(){
 
     break;
     case 4:
-    
+
     break;
     case 5:
 
