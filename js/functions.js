@@ -4,8 +4,9 @@ var yesses = 0;
 var nopes = 0;
 
 //audio
+var ding = new Audio("assets/audio/bell-ding.wav");
 function playAudio() {
-  document.getElementById("myAudio").play();
+  ding.play();
 }
 
 function onLoad(){
