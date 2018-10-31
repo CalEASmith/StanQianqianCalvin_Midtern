@@ -85,5 +85,53 @@ function pageTurn(){
     case 11:
     document.getElementById("image").src = "assets/picture_11.jpg";
     document.getElementById("question").innerHTML = "Have you dreamed about having a computer science class at 8 pm?";
+    break;
+    case 12:
+    document.getElementById("yesButton").hidden = true;
+    document.getElementById("noButton").hidden = true;
+    document.getElementById("image").hidden = true;
+    document.getElementById("title").hidden = false;
+    if (yesses < 5){
+      document.getElementById("title").innerHTML = "Congratulations! You're not a psychopath!";
+    }else{
+      document.getElementById("title").innerHTML = "Congratulations! You're a psychopath!";
+    }
+    switch(yesses){
+      case 1:
+      document.getElementById("question").innerHTML = "you should really work on remembering your dreams better";
+      break;
+      case 2:
+      document.getElementById("question").innerHTML = "The universe is a simulation and only you know the truth!";
+      break;
+      case 3:
+      document.getElementById("question").innerHTML = "You can actually fly! You’ve just never tried before.";
+      break;
+      case 4:
+      document.getElementById("question").innerHTML = "You’re in a coma because you got hit by a car last year and this quiz is the only way your family can communicate with you. Please! Wake up!";
+      break;
+      case 5:
+      document.getElementById("question").innerHTML = "You're the second coming of Jesus Christ";
+      break;
+      case 6:
+      document.getElementById("question").innerHTML = "You're a Cold War russian sleeper agent. Your activation phrase is 'There are absolutely no problems with your TAC schedule this semsester'";
+      break;
+      case 7:
+      document.getElementById("question").innerHTML = "Look out behind you!";
+      break;
+      case 8:
+      document.getElementById("question").innerHTML = "You know that dream you had about that test you were unprepared for? That one was real.";
+      break;
+      case 9:
+      document.getElementById("question").innerHTML = "When you fall asleep, you terminate your current state of conciousness. So essentially, every time you fall asleep, you die. Sweet dreams!";
+      break;
+      case 10:
+      document.getElementById("question").innerHTML = "Ever watch the movie Inception? That was a pretty good film..";
+      break;
+      case 11:
+      document.getElementById("question").innerHTML = "null";
+      break;
+      case 12:
+      document.getElementById("question").innerHTML = "You just clicked all yesses, didn't you?";
+    }
   }
 }
