@@ -91,14 +91,14 @@ function pageTurn(){
     document.getElementById("noButton").hidden = true;
     document.getElementById("image").hidden = true;
     document.getElementById("title").hidden = false;
-    if (yesses < 5){
+    if (yesses < 6){
       document.getElementById("title").innerHTML = "Congratulations! You're not a psychopath!";
     }else{
       document.getElementById("title").innerHTML = "Congratulations! You're a psychopath!";
     }
     switch(yesses){
       case 1:
-      document.getElementById("question").innerHTML = "you should really work on remembering your dreams better";
+      document.getElementById("question").innerHTML = "you should really work on remembering your dreams better.";
       break;
       case 2:
       document.getElementById("question").innerHTML = "The universe is a simulation and only you know the truth!";
@@ -110,10 +110,10 @@ function pageTurn(){
       document.getElementById("question").innerHTML = "You’re in a coma because you got hit by a car last year and this quiz is the only way your family can communicate with you. Please! Wake up!";
       break;
       case 5:
-      document.getElementById("question").innerHTML = "You're the second coming of Jesus Christ";
+      document.getElementById("question").innerHTML = "You're the second coming of Jesus Christ.";
       break;
       case 6:
-      document.getElementById("question").innerHTML = "You're a Cold War russian sleeper agent. Your activation phrase is 'There are absolutely no problems with your TAC schedule this semsester'";
+      document.getElementById("question").innerHTML = "You're a Cold War russian sleeper agent. Your activation phrase is 'There are absolutely no problems with your TAC schedule this semsester.'";
       break;
       case 7:
       document.getElementById("question").innerHTML = "Look out behind you!";
