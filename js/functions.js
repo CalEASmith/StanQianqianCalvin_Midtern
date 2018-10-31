@@ -1,12 +1,10 @@
-var pages = ["main","first","second","third","fourth","fifth","sixth","seventh","eighth","ninth","tenth","eleventh"];
 var page = 0;
 var yesses = 0;
 var nopes = 0;
 
 //audio
-var ding = new Audio("assets/audio/bell-ding.wav");
 function playAudio() {
-  ding.play();
+  document.getElementById("myAudio").play();
 }
 
 function onLoad(){
@@ -14,7 +12,7 @@ function onLoad(){
   yes.addEventListener("click", function(){
     page++;
     yesses++;
-    console.log(yesses + " yesses", "page: " + pages[page]);
+    console.log(yesses + " yesses", "page: " + page);
     pageTurn();
     playAudio();
 //listens for 'yes!' button click
@@ -23,28 +21,30 @@ function onLoad(){
   nope.addEventListener("click", function(){
     page++;
     nopes++;
-    console.log(nopes + " nopes", "page: " + pages[page]);
+    console.log(nopes + " nopes", "page: " + page);
     pageTurn();
     playAudio();
     //listens for 'nope!' button click
   });
 }
+
 window.addEventListener("load", onLoad);
+window.addEventListener("load", pageTurn);
 
 //function matches page number to page edits
 function pageTurn(){
   switch (page){
     case 0:
-
-
-
-
+    document.getElementById("noButton").hidden = true;
 //main page
-
     break;
     case 1:
     document.getElementById("image").src = "assets/picture_1.jpg";
     document.getElementById("question").innerHTML = "Have you dreamed about the world ending tomorrow?";
+    document.getElementById("yesButton").innerHTML = "Yes!";
+    document.getElementById("noButton").hidden = false;
+    document.getElementById("noButton").innerHTML = "Nope!";
+    document.getElementById("title").hidden = true;
     break;
     case 2:
     document.getElementById("image").src = "assets/picture_2.jpeg";
