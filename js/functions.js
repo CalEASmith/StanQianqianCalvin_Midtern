@@ -30,36 +30,47 @@ function pageTurn(){
 
     break;
     case 1:
-    document.getElementById("image").src = "assets/picture_2.jpeg";
+    document.getElementById("image").src = "assets/picture_1.jpeg";
     document.getElementById("question").innerHTML = "Have you dreamed about the world ending tomorrow?";
     break;
     case 2:
-
+    document.getElementById("image").src = "assets/picture_2.jpeg";
+    document.getElementById("question").innerHTML = "Did you fail to save the world?";
     break;
     case 3:
-
+    document.getElementById("image").src = "assets/picture_3.jpeg";
+    document.getElementById("question").innerHTML = "Did you wake from this terrible dream?";
     break;
     case 4:
-
+    document.getElementById("image").src = "assets/picture_4.jpeg";
+    document.getElementById("question").innerHTML = "Have you dreamed about zombies attacking at your house?";
     break;
     case 5:
-
+    document.getElementById("image").src = "assets/picture_5.jpeg";
+    document.getElementById("question").innerHTML = "Have you dreamed about being killed in your dream?";
     break;
     case 6:
-
+    document.getElementById("image").src = "assets/picture_6.jpeg";
+    document.getElementById("question").innerHTML = "Have you dreamed about yourself flying in the sky and fall?";
     break;
     case 7:
-
+    document.getElementById("image").src = "assets/picture_7.jpeg";
+    document.getElementById("question").innerHTML = "What happened after you fall?";
     break;
     case 8:
-
+    document.getElementById("image").src = "assets/picture_8.jpeg";
+    document.getElementById("question").innerHTML = "Have you ever dreamt that you’re still in school/have a test you never prepared for?";
     break;
     case 9:
-
+    document.getElementById("image").src = "assets/picture_9.jpeg";
+    document.getElementById("question").innerHTML = "Did you pass the DUE day in that dream?";
     break;
     case 10:
-
+    document.getElementById("image").src = "assets/picture_10.jpeg";
+    document.getElementById("question").innerHTML = "Have you dreamed about you are a god?";
     break;
     case 11:
+    document.getElementById("image").src = "assets/picture_11.jpeg";
+    document.getElementById("question").innerHTML = "Have you dreamed about having a computer science class at 8 pm?";
   }
 }
