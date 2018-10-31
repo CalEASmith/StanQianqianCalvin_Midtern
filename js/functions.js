@@ -2,6 +2,12 @@ var pages = ["main","first","second","third","fourth","fifth","sixth","seventh",
 var page = 0;
 var yesses = 0;
 var nopes = 0;
+
+//audio
+function playAudio() {
+  document.getElementById("myAudio").play();
+}
+
 function onLoad(){
   var yes = document.getElementById("yesButton")
   yes.addEventListener("click", function(){
@@ -9,6 +15,7 @@ function onLoad(){
     yesses++;
     console.log(yesses + " yesses", "page: " + pages[page]);
     pageTurn();
+    playAudio();
 //listens for 'yes!' button click
   });
   var nope = document.getElementById("noButton")
@@ -17,6 +24,7 @@ function onLoad(){
     nopes++;
     console.log(nopes + " nopes", "page: " + pages[page]);
     pageTurn();
+    playAudio();
     //listens for 'nope!' button click
   });
 }
@@ -26,6 +34,10 @@ window.addEventListener("load", onLoad);
 function pageTurn(){
   switch (page){
     case 0:
+
+
+
+
 //main page
 
     break;
