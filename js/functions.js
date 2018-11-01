@@ -87,9 +87,6 @@ function pageTurn(){
     document.getElementById("question").innerHTML = "Have you dreamed about having a computer science class at 8 pm?";
     break;
     case 12:
-    //video goes here
-    break;
-    case 13:
     document.getElementById("yesButton").hidden = true;
     document.getElementById("noButton").hidden = true;
     document.getElementById("image").hidden = true;
@@ -133,10 +130,7 @@ function pageTurn(){
       case 11:
       document.getElementById("question").innerHTML = "null";
       break;
-      case:
-      document.getElementById("question").innerHTML = "Dreams are pretty crazy, right?";
-      break;
-      case 13:
+      case 12:
       document.getElementById("question").innerHTML = "You just clicked all yesses, didn't you?";
     }
   }
