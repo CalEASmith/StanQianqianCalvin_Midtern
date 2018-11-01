@@ -87,6 +87,9 @@ function pageTurn(){
     document.getElementById("question").innerHTML = "Have you dreamed about having a computer science class at 8 pm?";
     break;
     case 12:
+    //video goes here
+    break;
+    case 13:
     document.getElementById("yesButton").hidden = true;
     document.getElementById("noButton").hidden = true;
     document.getElementById("image").hidden = true;
@@ -98,7 +101,7 @@ function pageTurn(){
     }
     switch(yesses){
       case 1:
-      document.getElementById("question").innerHTML = "you should really work on remembering your dreams better.";
+      document.getElementById("question").innerHTML = "You should really work on remembering your dreams better.";
       break;
       case 2:
       document.getElementById("question").innerHTML = "The universe is a simulation and only you know the truth!";
@@ -130,7 +133,10 @@ function pageTurn(){
       case 11:
       document.getElementById("question").innerHTML = "null";
       break;
-      case 12:
+      case:
+      document.getElementById("question").innerHTML = "Dreams are pretty crazy, right?";
+      break;
+      case 13:
       document.getElementById("question").innerHTML = "You just clicked all yesses, didn't you?";
     }
   }
